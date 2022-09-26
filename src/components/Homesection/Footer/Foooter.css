@@ -1,0 +1,40 @@
+.footer
+{
+    margin-top: 15px;
+    background: #222;
+    width: 100%;
+    padding: 15px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.footer h6
+{
+    font-size: 14px;
+}
+.footer p
+{
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width:768px)
+{
+    .footer{
+        flex-direction: column;   
+    }
+
+}
+@media screen and (max-width:414px)
+{
+    .footer h6
+    {
+        font-size: 12px;
+    }
+
+    .footer p
+    {
+        font-size: 12px;
+    }
+}

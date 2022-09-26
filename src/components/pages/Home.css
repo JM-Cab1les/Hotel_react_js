@@ -1,0 +1,189 @@
+/*--slider--*/
+
+.slider
+{
+    overflow: hidden;
+    position: relative;
+}
+.slider img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.control-btn .next
+{
+     position: absolute;
+     top: 40%;
+     z-index: 10;
+     right: 5%;
+}
+
+.control-btn .prev
+{
+     position: absolute;
+     top: 40%;
+     z-index: 10;
+     left: 5%;
+}
+
+.slide
+{
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active
+{
+    opacity: 1;
+    transition-duration:1s ;
+    transform: scale(1.08);
+}
+
+
+/*--slider-form---*/
+
+.slide-form h2
+{
+    margin-top: 30px;
+}
+
+.slide-form 
+{
+    position: absolute;
+    top:35%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35%;
+    height: 70vh;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.slide-form input
+{
+    margin-top: 20px;
+    border-radius: 5px;
+  
+}
+
+.slide-form .flex_space input:nth-child(odd)
+{
+    margin-right: 20px;
+}
+
+.slide-form .submit
+{
+    background-color: #31b675;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.slide-form .submit:hover
+{
+    color: #fff;
+}
+
+
+@media screen and (max-width:1280px)
+{
+    .slide-form
+    {
+        top:30%;
+        height: 50vh;
+    }
+}
+
+
+
+@media screen and (max-width:768px)
+{
+    .slider
+    {
+        height: 65vh;
+    }
+
+    .slider img
+    {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .slide-form
+    {
+        left: 5%;
+        top: 55%;
+        width: 90%;
+        height: 62vh;
+    }
+   
+    .control-btn .next
+    {
+        right: -1%;
+    }
+    .control-btn .prev
+    {
+        left: -1%;
+    }
+}
+
+@media screen and (max-width:420px)
+{
+   
+    .slide-form
+    {
+        top:55%;
+        width: 90%;
+        height: 50vh;
+    }
+
+    .control-btn .next
+{
+   
+     top: 90%;
+     right: 30%;
+}
+
+.control-btn .prev
+{
+    
+     top: 90%;
+     left: 30%;
+}
+   
+}
+
+@media (max-width:390px)
+{
+    .slide-form
+    {
+        top:60%;
+        height: 55vh;
+    }
+    .slider img
+    {
+        height: 60vh;
+    }    
+
+    .control-btn .next
+    {
+       
+         top: 90%;
+         right: 30%;
+    }
+    
+    .control-btn .prev
+    {
+        
+         top: 90%;
+         left: 30%;
+    }
+}
+
+@media (max-width:280px)
+{
+    .slide-form
+    {
+        height: 70vh;
+    }
+}
